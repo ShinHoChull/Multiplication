@@ -9,7 +9,7 @@ import androidx.viewbinding.ViewBinding;
 
 public abstract class BaseActivity<VB extends ViewBinding> extends AppCompatActivity {
 
-    protected ViewBinding binding;
+    protected VB binding;
 
 
     @Override
