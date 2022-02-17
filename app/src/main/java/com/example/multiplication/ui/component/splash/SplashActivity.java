@@ -19,20 +19,17 @@ public class SplashActivity extends BaseActivity<ActivitySplashBinding> {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
         binding.getRoot().postDelayed(new Runnable() {
             @Override
             public void run() {
                 startActivity(
                         new Intent(getApplicationContext(), MainActivity.class)
                 );
+                finish();
             }
         }, mSplashTime);
     }
+
 
     @Override
     protected void setUpListener() {

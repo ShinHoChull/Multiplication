@@ -5,10 +5,13 @@ import androidx.viewbinding.ViewBinding;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 
+import com.example.multiplication.R;
 import com.example.multiplication.data.dto.RankItem;
 import com.example.multiplication.databinding.ActivityMainBinding;
 import com.example.multiplication.ui.base.BaseActivity;
+import com.example.multiplication.ui.component.detail.DetailFragment;
 import com.example.multiplication.ui.component.main.adapter.MainAdapter;
 
 import java.util.ArrayList;
@@ -28,7 +31,6 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
 
         setUpTempData();
         setUpInit();
-
     }
 
     private void setUpInit() {
@@ -48,7 +50,16 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
 
     @Override
     protected void setUpListener() {
-
+        binding.startButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                binding.fragmentContainerView.setVisibility(View.VISIBLE);
+//                getSupportFragmentManager()
+//                        .beginTransaction()
+//                        .replace(R.id.fragment_container_view, new DetailFragment())
+//                        .commit();
+            }
+        });
     }
 
 }
