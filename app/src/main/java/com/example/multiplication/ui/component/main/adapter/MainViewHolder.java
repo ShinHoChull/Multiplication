@@ -21,5 +21,4 @@ public class MainViewHolder extends RecyclerView.ViewHolder {
         mBinding.name.setText(rankItem.getName());
     }
 
-
 }
