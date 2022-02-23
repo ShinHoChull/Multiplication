@@ -39,8 +39,8 @@
                 android:layout_marginEnd="5dp"
                 android:textColor="#EC4C4C"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="@id/trophy"
-                app:layout_constraintBottom_toBottomOf="@id/trophy"
+                app:layout_constraintTop_toTopOf="@id/trophy_img"
+                app:layout_constraintBottom_toBottomOf="@id/trophy_img"
                 />
 
             <ImageView
@@ -56,7 +56,7 @@
             <ProgressBar
                 android:id="@+id/progress_bar"
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginTop="10dp"

@@ -24,7 +24,8 @@ import java.util.ArrayList;
 
 public class MainActivity extends BaseActivity<ActivityMainBinding> {
 
-    MainAdapter mAdapter;
+    private MainAdapter mAdapter;
+
 
     @Override
     protected ActivityMainBinding getViewBinding() {
